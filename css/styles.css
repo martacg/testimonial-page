@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500;800&display=swap');
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+* {
+        background: none repeat scroll 0 0 transparent;
+        border: medium none;
+        border-spacing: 0;
+        color: #18181B;;
+        font-weight: normal;
+        line-height: 1.42rem;
+        list-style: none outside none;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        text-indent: 0;
+}
+
+
+body {
+    min-height: calc(100vh - 8rem);
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #FAFAF9;
+    color: #18181B;
+    font-family: 'Sora', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-attachment: fixed;
+    background-size: 50px 50px;
+    overflow-x: hidden;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Desktop */
+@media screen and (min-width: 780px){
+
+    body {
+        background-position: 80% center;
+        padding: 4rem;
+    }
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.5rem;
+    column-gap: 1.5rem;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+/* Desktop */
+@media screen and (min-width: 780px){
+    main {
+        flex-direction: row;
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+        max-width: 1280px;
+    }
+}
+
+footer{
+    text-align: center;
+}
+
+/*Components*/
+
+/* checklist */
+.checklist{
+    width: 100%;
+}
+/* Desktop */
+@media screen and (min-width: 780px){
+    .checklist{
+        width: 50%;
+    }
+}
+.checklist p{
+    font-size: 1.25rem;
+    margin-top: 1em;
+    color: #52525A;
+    line-height: 1.7em;
+    font-weight: 300;
+}
+.checklist .checklist__star{
+    height: 24px;
+    background-color: #F5C044;
+    border-radius: 100%;
+    padding: 10px;
+}
+.checklist .checklist__title{
+    font-weight: 500;
+    margin-top: .6em;
+    font-size: 2.25rem;
+}
+.checklist .checklist__list{
+    font-size: 0.875rem;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    color: #52525A;
+    
+}
+.checklist .checklist__list li{
+    color: #52525A;
+    display: flex;
+    margin-bottom: 15px;
+    align-items: flex-start;
+}
+.checklist .checklist__list li:before{
+    content: '';
+    background-color: #4CA154; /* defines the background color of the image */
+    mask: url(../images/Done_ring_round_fill.svg) no-repeat center / contain;
+    -webkit-mask: url(../images/Done_ring_round_fill.svg) no-repeat center / contain;
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+.checklist .checklist__list li span{
+    display: block;
+    width: 100%;
+    margin-left: 8px;
+    font-weight: 300;
+}
+
+
+/* reviewers */
+.reviewers{
+    width: 100%;
+}
+/* Desktop */
+@media screen and (min-width: 780px){
+    .checklist{
+        width: 50%;
+    }
+}
+.reviewers .reviewer{
+    display: flex;
+    flex-direction: column;
+}
+.reviewers .reviewer div{
+    background-color: #FFFFFF;
+    padding: 1.5em 2.5em;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+}
+.reviewers .reviewer div strong{
+    font-weight: 500;
+    line-height: 1.7em;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+.reviewers .reviewer div p{
+    font-weight: 300;
+    line-height: 1.7em;
+    font-size: 1rem;
+}
+.reviewers .reviewer div div{
+    padding: 0;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 1em;
+    align-items: center;
+}
+.reviewers .reviewer div ul{
+    display: flex;
+    margin-left: 1em;
+}
+.reviewers .reviewer div ul li .reviewers__star--default{
+    background-color: #D4D4D8; /* defines the background color of the image */
+    mask: url(../images/Star_fill.svg) no-repeat center / contain;
+    -webkit-mask: url(../images/Star_fill.svg) no-repeat center / contain;
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+.reviewers .reviewer div ul li .reviewers__star--active{
+    background-color: #F5C044; /* defines the background color of the image */
+    mask: url(../images/Star_fill.svg) no-repeat center / contain;
+    -webkit-mask: url(../images/Star_fill.svg) no-repeat center / contain;
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+.reviewers .reviewer:first-child{
+    align-items: flex-end;
+    margin-bottom: 2em;
+}
+.reviewers .reviewer:last-child{
+    align-items: flex-start;
+}
+
+
+
+
+/* Desktop */
+@media screen and (min-width: 780px){
+
+
+}
