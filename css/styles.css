@@ -94,7 +94,7 @@ footer{
 /* Desktop */
 @media screen and (min-width: 780px){
     .checklist{
-        width: 50%;
+        width: 80%;
     }
 }
 .checklist p{
@@ -155,11 +155,11 @@ footer{
         width: 50%;
     }
 }
-.reviewers .reviewer{
+.reviewers .card{
     display: flex;
     flex-direction: column;
 }
-.reviewers .reviewer div{
+.reviewers .card div{
     background-color: #FFFFFF;
     padding: 1.5em 2.5em;
     width: 50%;
@@ -167,29 +167,29 @@ footer{
     flex-direction: column;
     border-radius: 12px;
 }
-.reviewers .reviewer div strong{
+.reviewers .card div strong{
     font-weight: 500;
     line-height: 1.7em;
     margin-bottom: 5px;
     font-size: 1rem;
 }
-.reviewers .reviewer div p{
+.reviewers .card div p{
     font-weight: 300;
     line-height: 1.7em;
     font-size: 1rem;
 }
-.reviewers .reviewer div div{
+.reviewers .card div div{
     padding: 0;
     flex-direction: row;
     width: 100%;
     margin-bottom: 1em;
     align-items: center;
 }
-.reviewers .reviewer div ul{
+.reviewers .card div ul{
     display: flex;
     margin-left: 1em;
 }
-.reviewers .reviewer div ul li .reviewers__star--default{
+.reviewers .card div ul li .reviewers__star--default{
     background-color: #D4D4D8; /* defines the background color of the image */
     mask: url(../images/Star_fill.svg) no-repeat center / contain;
     -webkit-mask: url(../images/Star_fill.svg) no-repeat center / contain;
@@ -197,7 +197,7 @@ footer{
     width: 24px;
     height: 24px;
 }
-.reviewers .reviewer div ul li .reviewers__star--active{
+.reviewers .card div ul li .reviewers__star--active{
     background-color: #F5C044; /* defines the background color of the image */
     mask: url(../images/Star_fill.svg) no-repeat center / contain;
     -webkit-mask: url(../images/Star_fill.svg) no-repeat center / contain;
@@ -205,19 +205,10 @@ footer{
     width: 24px;
     height: 24px;
 }
-.reviewers .reviewer:first-child{
+.reviewers .card:first-child{
     align-items: flex-end;
     margin-bottom: 2em;
 }
-.reviewers .reviewer:last-child{
+.reviewers .card:last-child{
     align-items: flex-start;
-}
-
-
-
-
-/* Desktop */
-@media screen and (min-width: 780px){
-
-
 }
