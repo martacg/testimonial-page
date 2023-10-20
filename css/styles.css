@@ -94,7 +94,7 @@ footer{
 /* Desktop */
 @media screen and (min-width: 780px){
     .checklist{
-        width: 80%;
+        width: 50%;
     }
 }
 .checklist p{
